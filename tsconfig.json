@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@angeeks/md": [
+        "dist/angeeks/md"
+      ],
+      "@angeeks/md/*": [
+        "dist/angeeks/md/*"
+      ]
+    }
   }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "@angeeks/md",
+  "description": "Another markdown wrapper with Angular, build with simplicity and clarity in mind.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "markdown",
+    "angeeks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeeks/marked.git"
+  },
+  "homepage": "https://angeeks.github.io/marked",
+  "bugs": {
+    "url": "https://github.com/angeeks/marked/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0"
+  }
+}

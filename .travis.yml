@@ -8,6 +8,8 @@ install:
   - npm i
 script:
   - npx ng lint
+  - npx ng test @angeeks/md --watch=false
+  - npx ng build @angeeks/md --prod
   - npx ng test marked --watch=false
   - npx ng build marked --prod --base-href marked
 cache:
