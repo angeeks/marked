@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
+import { AppData } from './app.data';
 
-import { HttpClient } from '@angular/common/http';
-
-const repoApi = 'https://api.github.com/repos/angeeks/marked';
 const sample = `# title
 \`\`\`
 <ngk-md> Demo </ngk-md>
@@ -22,8 +20,8 @@ export class AppComponent {
   title = 'ngk';
   desc = '';
   md = sample;
-  constructor(private http: HttpClient) {
-    http.get(repoApi).subscribe(({ name, description: desc }: any) => {
+  constructor(private data: AppData) {
+    data.repo.subscribe(({ name, description: desc }: any) => {
       this.title = name;
       this.desc = desc;
     });
