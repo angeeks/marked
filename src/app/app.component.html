@@ -1,3 +1,8 @@
-<h2> ngk-md / ngk-markdown </h2>
-<textarea [value]='md' (change)='update($event)'></textarea>
-<ngk-md [src]='md'></ngk-md>
+<ngk-body>
+  <ngk-hero [title]='title' [desc]='desc'></ngk-hero>
+  <div class='wrap'>
+    <textarea [value]='md' (change)='update($event)'></textarea>
+    <ngk-md [src]='md'></ngk-md>
+  </div>
+</ngk-body>
+

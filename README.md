@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/%40angeeks%2Ftesting.svg)](https://www.npmjs.com/package/@angeeks/md)
 
 Another markdown wrapper component for Angular, build with simplicity and clarity in mind.
-Note that by default, it use `marked.js` as the parser (that's why this project called), see [below](replace-parser) to use your own parser.
+Note that by default, it use `marked.js` as the parser (that's why this project called), see [below](#replace-parser) to use your own parser.
 
 # Installation
 
