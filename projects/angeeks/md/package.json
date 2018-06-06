@@ -1,7 +1,7 @@
 {
   "name": "@angeeks/md",
   "description": "Another markdown wrapper with Angular, build with simplicity and clarity in mind.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "keywords": [
     "angular",
@@ -20,6 +20,7 @@
     "access": "public"
   },
   "peerDependencies": {
+    "marked": "^0.4.0",
     "@angular/common": "^6.0.0",
     "@angular/core": "^6.0.0"
   }
