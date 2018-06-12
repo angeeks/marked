@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppData } from './app.data';
+import { Gtag } from '@angeeks/gtag';
 
 const sample = `# title
 \`\`\`
@@ -20,7 +21,10 @@ export class AppComponent {
   title = 'ngk';
   desc = '';
   md = sample;
-  constructor(private data: AppData) {
+  constructor(
+    private gtag: Gtag,
+    private data: AppData) {
+    gtag.event('page_view', { loaded: true, project: '@angeeks/gtag' });
     data.repo.subscribe(({ name, description: desc }: any) => {
       this.title = name;
       this.desc = desc;
